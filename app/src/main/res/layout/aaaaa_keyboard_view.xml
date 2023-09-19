@@ -24,7 +24,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:hapticFeedbackEnabled="true"
-            android:text="rawr"
+            android:text="@string/rawr"
             android:textAppearance="@style/AButtonText"
             app:layout_constraintBottom_toTopOf="@id/btnSpace"
             app:layout_constraintEnd_toEndOf="parent"
