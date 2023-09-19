@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) David Teresi 2021.
+  ~
+  ~ This Source Code Form is subject to the terms of the Mozilla Public
+  ~ License, v. 2.0. If a copy of the MPL was not distributed with this
+  ~ file, You can obtain one at http://mozilla.org/MPL/2.0/.
+  -->
+
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        app:title="@string/settingsHeader"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            app:key="@string/hapticFeedbackKey"
+            app:title="@string/enableHapticFeedback"
+            app:defaultValue="true"
+            app:iconSpaceReserved="false" />
+
+        <ListPreference
+            app:key="@string/themeSettingKey"
+            app:title="@string/themeSetting"
+            app:entries="@array/themeEntries"
+            app:entryValues="@array/themeValues"
+            app:defaultValue="MODE_NIGHT_FOLLOW_SYSTEM"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false" />
+
+        <SwitchPreferenceCompat
+            app:key="@string/minimalistModeKey"
+            app:title="@string/minimalistMode"
+            app:summary="@string/minimalistModeDesc"
+            app:defaultValue="false"
+            app:iconSpaceReserved="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

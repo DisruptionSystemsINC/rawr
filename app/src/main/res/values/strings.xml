@@ -1,0 +1,37 @@
+<!--
+  ~ Copyright (c) David Teresi 2021.
+  ~
+  ~ This Source Code Form is subject to the terms of the Mozilla Public
+  ~ License, v. 2.0. If a copy of the MPL was not distributed with this
+  ~ file, You can obtain one at http://mozilla.org/MPL/2.0/.
+  -->
+
+<resources>
+    <string name="app_name">aaaaa</string>
+    <string name="a">a</string>
+    <string name="space">space</string>
+    <string name="backspace">backspace</string>
+    <string name="enter">return</string>
+    <string name="uppercase">caps lock</string>
+
+    <string name="enableKeyboardHeader">Enable keyboard</string>
+    <string name="enableKeyboardSubheader">To use this keyboard, you need to enable it in settings.</string>
+    <string name="openKeyboardSettings">Click to open keyboard settings</string>
+    <string name="closeKeyboardSettingsReminder">I already did, please go away</string>
+
+    <string name="toastFeatureNotImplemented">Feature not implemented</string>
+    <string name="toastDisableHapticFeedback">you monster</string>
+
+    <string name="textBoxPlaceholder">Test your new keyboard here</string>
+    <string name="errorInvalidCharacters">Error: invalid characters detected</string>
+
+    <string name="settingsHeader">Settings</string>
+    <string name="enableHapticFeedback">Enable haptic feedback on tap</string>
+    <string name="themeSetting">Theme</string>
+    <string name="minimalistMode">Minimalist mode</string>
+    <string name="minimalistModeDesc">Disable space and caps lock keys</string>
+
+    <string name="hapticFeedbackKey">io.github.dkter.aaaaa.enableHapticFeedback</string>
+    <string name="themeSettingKey">io.github.dkter.aaaaa.themeSetting</string>
+    <string name="minimalistModeKey">io.github.dkter.aaaaa.minimalistMode</string>
+</resources>

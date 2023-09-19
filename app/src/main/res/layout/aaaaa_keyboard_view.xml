@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) David Teresi 2021.
+  ~
+  ~ This Source Code Form is subject to the terms of the Mozilla Public
+  ~ License, v. 2.0. If a copy of the MPL was not distributed with this
+  ~ file, You can obtain one at http://mozilla.org/MPL/2.0/.
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/keyboard_shadow"
+    android:elevation="8dp"
+    android:orientation="horizontal"
+    tools:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/btnA"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:text="rawr"
+            android:textAppearance="@style/AButtonText"
+            app:layout_constraintBottom_toTopOf="@id/btnSpace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnBackspace"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/backspace"
+            android:hapticFeedbackEnabled="true"
+            android:src="@drawable/ic_backspace"
+            android:tint="?attr/colorControlNormal"
+            app:srcCompat="@drawable/ic_backspace"
+            tools:srcCompat="@drawable/ic_backspace"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnUppercase"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/uppercase"
+            android:hapticFeedbackEnabled="true"
+            android:src="@drawable/ic_keyboard_caps"
+            android:tint="?attr/colorControlNormal"
+            app:srcCompat="@drawable/ic_keyboard_caps"
+            tools:srcCompat="@drawable/ic_keyboard_caps"
+            app:layout_constraintBottom_toTopOf="@id/btnBackspace"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            android:id="@+id/btnSpace"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/space"
+            android:textAppearance="@style/SpaceButtonText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnBackspace"
+            app:layout_constraintEnd_toStartOf="@id/btnReturn"/>
+
+        <ImageButton
+            android:id="@+id/btnReturn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/enter"
+            android:hapticFeedbackEnabled="true"
+            android:src="@drawable/ic_return"
+            android:tint="?attr/colorControlNormal"
+            app:srcCompat="@drawable/ic_return"
+            tools:srcCompat="@drawable/ic_return"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
